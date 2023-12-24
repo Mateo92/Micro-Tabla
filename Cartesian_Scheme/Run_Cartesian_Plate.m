@@ -18,22 +18,27 @@ E_ext = E_cytop;
 rho_ext = rho_cytop;
 nu_ext = nu_cytop;
 
-%%% Internal radious features %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Di_int = Di_ext * 0.3;
-H_int = H_ext * 0.1;
-E_int = E_au;
-rho_int = rho_au;
-nu_int = nu_au;
-
-%%% Homogeneous cytop plate first eigenfrequencies %%%%%%%%%%%%%%%%%%%%%%%%
-D = E_cytop * H_ext^3 / (12 * (1 - nu_cytop^2));
-kappa = sqrt(D / (rho_cytop * H_ext)) / (Di_ext / 2)^2;
+%%% Homogeneous plate first eigenfrequencies %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+D = E_ext * H_ext^3 / (12 * (1 - nu_ext^2));
+kappa = sqrt(D / (rho_ext * H_ext)) / (Di_ext / 2)^2;
 f_fund = kappa * 10.22 * 1e-6 / (2 * pi);
 f_11 = kappa * 21.26 * 1e-6 / (2 * pi);
 f_12 = kappa * 34.88 * 1e-6 / (2 * pi);
 f_20 = kappa * 39.77 * 1e-6 / (2 * pi);
 f_13 = kappa * 51.04 * 1e-6 / (2 * pi);
 f_21 = kappa * 60.82 * 1e-6 / (2 * pi);
+
+%%% Internal radius features %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Di_int=Di_ext*0.3;  %Internal Diameter in [m]
+H_int=H_ext*4;      %Internal thickness in [m]
+
+% Di_int=0;         %Homogeneous case
+% H_int=0;          %Homogeneous case
+
+E_int=E_au;         %Internal Young modulus
+rho_int=rho_au;     %Internal density
+nu_int=nu_au;       %Internal Poisson's ratio
 
 %%% Channels measures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ch_len = 14 * 1e-5;
