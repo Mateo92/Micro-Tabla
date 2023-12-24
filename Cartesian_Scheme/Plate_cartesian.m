@@ -225,7 +225,7 @@ if ploting == 1
     zlabel('$u_t(x,y,t=0)[m\sigma^{-1}]$', 'Fontsize', 20, 'Interpreter', 'latex')
     
     x0 = 10;
-    y0 = 500;
+    y0 = 1000;
     width = 1400;
     height = 350;
     set(gcf, 'position', [x0, y0, width, height])
