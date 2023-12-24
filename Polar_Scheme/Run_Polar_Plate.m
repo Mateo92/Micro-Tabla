@@ -118,10 +118,6 @@ limz=1e-7;
       Polar_plate_2lapl(Di_ext,H_ext,E_ext,rho_ext,nu_ext,Di_int,H_int,E_int,rho_int,nu_int,sigma_time,...
 k_stability_constant,ctr,wid,u0,v0,sig0,k_sigmoid,logistic_fun,Nr,Nt,TF,rp_mat,ploting,anim,n_anim,limz,plot_fft);
 
-%  [out_polar,SR,hr,ht,k_polar]=...
-%       Polar_plate_2lapl_noplot(Di_ext,H_ext,E_ext,rho_ext,nu_ext,Di_int,H_int,E_int,rho_int,nu_int,sigma_time,...
-% k_stability_constant,ctr,wid,u0,v0,sig0,k_sigmoid,logistic_fun,Nr,Nt,TF,rp_mat);
-
 
 %%% Write outputs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % writematrix(out,strcat(folder,'out.csv'));
