@@ -45,11 +45,8 @@ ch_len = 0;
 %%% Initial conditions parameters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%% Initial position %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-PE = 0.001;  % Initial potential energy [Joules]
 
-% u0 = Heigth_PE(PE,Di_int,nu_int,E_int,H_int,Di_ext,nu_ext,E_ext,H_ext); % %initial position height [m]
-
-u0 = 0;  
+u0 = 0; 
 % u0 = 4e-6;
 
 %%%% Initial velocity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,7 +85,7 @@ limz = 1e-6;
 %%%% Write metadata %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % T = table(Di_ext,H_ext,E_ext,rho_ext,nu_ext,Di_int,H_int,E_int,rho_int,nu_int,ch_len,ch_wid,...
-%     ctr,wid,KE,PE,u0,v0,sig0,k_sigmoid,Nx,TF);
+%     ctr,wid,KE,u0,v0,sig0,k_sigmoid,Nx,TF);
 % folder=strcat('Experiments/Single_experiment/',datestr(datetime('now')),'/');
 % mkdir(folder)
 % metadatafolder=strcat(folder,'/metadata/');

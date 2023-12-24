@@ -51,7 +51,7 @@ nu_int=nu_au;       %Internal Poisson's ratio
 
 %%%  Initial position
 
- u0=0;       %initial position height [m]
+ u0=0;       % initial position height [m]
 % u0=5e-8;
 
 %%% Initial velocity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,7 +62,7 @@ KE=7e-6;         %   Maximum initial kinetic energy [Joules]
 
 v0=init_vel_KE(KE,H_ext,rho_ext,Di_int,H_int,rho_int,wid); %maximum initial kinetic energy
 
-% v0=5;         %maximum initial velocity [m/s]
+% v0=5;         % maximum initial velocity [m/s]
 
 %%% Read out points %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -103,8 +103,8 @@ plot_fft=1;  %Plot Fourier transform of the output signals
 limz=1e-7;
 %%% Write metadata %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% T = table(PE,Di_ext,H_ext,E_ext,rho_ext,nu_ext,Di_int,H_int,E_int,rho_int,nu_int,...
-%     ctr,wid,u0,v0,sig0,k_sigmoid,logistic_fun,Nr,Nt,TF);
+% T = table(Di_ext,H_ext,E_ext,rho_ext,nu_ext,Di_int,H_int,E_int,rho_int,nu_int,...
+%     ctr,wid,KE,u0,v0,sig0,k_sigmoid,logistic_fun,Nr,Nt,TF);
 % folder=strcat('Experiments/Single_experiment/',datestr(datetime('now')),'/');
 % mkdir(folder)
 % metadatafolder=strcat(folder,'/metadata/');
